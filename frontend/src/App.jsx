@@ -44,7 +44,7 @@ const TreeNode = ({ node, children }) => {
 
 export default function App() {
   const [input, setInput] = useState("");
-  const [apiUrl, setApiUrl] = useState("http://localhost:3000/bfhl");
+  const [apiUrl, setApiUrl] = useState("https://bfhl-r1.onrender.com/bfhl");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [data, setData] = useState(null);
