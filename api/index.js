@@ -174,7 +174,6 @@ function processData(data) {
   };
 }
 
-/* ── Routes ────────────────────────────────────────────────────────────── */
 app.post("/bfhl", (req, res) => {
   const { data } = req.body;
   if (!Array.isArray(data)) {
@@ -193,6 +192,5 @@ app.get("/bfhl", (_req, res) =>
 
 app.get("/", (_req, res) => res.send("BFHL API is running. POST to /bfhl"));
 
-/* ── Start ─────────────────────────────────────────────────────────────── */
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`BFHL server listening on port ${PORT}`));
